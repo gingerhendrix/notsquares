@@ -8,8 +8,120 @@ AUTHOR Uri: http://gandrew.com
 TAGS: woop
 TEMPLATE: sandbox
 */
+@import url('http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css');
 
-body {
-  background-color: black;
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+a:visited{
   color: white;
 }
+
+html{
+ background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#wrapper {
+  background-color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding-bottom: 200px;
+}
+
+h1#blog-title{
+  font-size: 16pt;
+  font-family: verdana;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 60px;
+  padding-top: 10px;
+  margin-left: -20px;
+}
+
+#blog-description{
+  display : none;
+}
+
+#footer{
+  display: none;
+}
+
+#access{
+  display: none; /* Skip to content and about link */
+}
+
+.sidebar {
+ display: block;
+ float: right;
+ width: 200px;
+ padding-left: 10px;
+ text-align: left;
+}
+
+#container {
+  text-align: left;
+  float: left;
+  width: 690px;
+}
+
+.post{
+  width: 660px;
+  margin-bottom: 30px;
+}
+
+.post .entry-title{
+  font-family: verdana, helvetica, arial;
+  font-size: 11pt;
+}
+
+.post .entry-date{
+  font-size: 8pt;
+  margin-bottom: 20px;
+}
+
+.post .entry-meta{
+  font-size: 8pt;
+}
+
+.widget.lfe_widget{
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.lfe_widget h3{
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.lfe_widget li.vevent{
+  padding-left: 5px;
+  margin-bottom: 5px;
+  font-size: 9pt;
+}
+
+.lfe_widget .lastfm-profile{
+  float: right;
+  font-size: 9pt;
+  margin-right: 5px;
+}
+
+
+
