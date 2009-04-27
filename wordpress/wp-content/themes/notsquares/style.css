@@ -6,7 +6,7 @@ VERSION: 0.1
 AUTHOR: Gareth Andrew
 AUTHOR Uri: http://gandrew.com
 TAGS: woop
-TEMPLATE: sandbox
+TEMPLATE: sandbox-notsquares
 */
 @import url('http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css');
 
@@ -29,35 +29,50 @@ html{
 
 body {
   background-color: #000000;
+  background-image: url('images/background.jpg');
+  background-attachment: fixed;
   color: white;
   text-align: center;
   margin-bottom: 0px;
 }
 
 #wrapper {
-  background-color: #000;
   margin-left: auto;
   margin-right: auto;
+  background-image: url('images/logo.jpg');
+  background-repeat: no-repeat;
+  background-position: 300px 0px;
+  background-attachment: fixed;
   width: 960px;
-  padding-bottom: 200px;
+  position: relative;
 }
 
 h1#blog-title{
-  font-size: 16pt;
+  display : none;
+  /*
+  font-size: 0pt;
   font-family: verdana;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 60px;
-  padding-top: 10px;
-  margin-left: -20px;
+  margin-bottom: 0px;
+  background-image: url('images/logo.jpg');
+  width: 777px;
+  height: 443px;
+  opacity: .6; */
 }
 
 #blog-description{
   display : none;
 }
 
-#footer{
+
+.heder-image{
   display: none;
+}
+
+#footer{
+  visibility: hidden;
+  clear: both;
 }
 
 #access{
@@ -66,26 +81,58 @@ h1#blog-title{
 
 .sidebar {
  display: block;
- float: right;
  width: 200px;
  padding-left: 10px;
  text-align: left;
+ position: fixed;
+ left: 1080px;
+}
+
+#primary.sidebar{
+  top: 200px;
+}
+
+#secondary.sidebar{
+ top: 400px;
 }
 
 #container {
   text-align: left;
   float: left;
   width: 690px;
+  min-height: 800px;
+  margin-top: 477px;
+}
+
+.navigation{
+  font-size: 9pt;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.nav-previous{
+ float: left;
+}
+
+.nav-next{
+ float: right;
 }
 
 .post{
   width: 660px;
   margin-bottom: 30px;
+  background-color: rgba(0,0,0,0.65);
+  opacity: .9;
 }
 
 .post .entry-title{
   font-family: verdana, helvetica, arial;
   font-size: 11pt;
+  margin-bottom: 20px;
+  background-color: rgba(30,30,30,0.8);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
 }
 
 .post .entry-date{
@@ -94,8 +141,14 @@ h1#blog-title{
 }
 
 .post .entry-meta{
+  margin-top: 10px;
   font-size: 8pt;
 }
+
+.post .entry-content{
+  margin-top: 10px;
+}
+
 
 .widget.lfe_widget{
   border: 1px solid white;
@@ -123,5 +176,20 @@ h1#blog-title{
   margin-right: 5px;
 }
 
+.sidebar#secondary{
+  font-size: 9pt;
+}
+
+.sidebar#secondary{
+  font-size: 9pt;
+}
+
+.sidebar#secondary ul.xoxo > li{
+  margin-top: 10px;
+}
+
+.sidebar#secondary ul.xoxo > li li{
+  padding-left: 5px;
+}
 
 
