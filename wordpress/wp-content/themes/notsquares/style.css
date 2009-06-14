@@ -12,7 +12,7 @@ TEMPLATE: sandbox-notsquares
 @import url('layout.css');
 
 a{
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -21,21 +21,11 @@ a:hover{
 }
 
 a:visited{
-  color: white;
+  color: black;
 }
-
+/*
 h1#blog-title{
   display : none;
-  /*
-  font-size: 0pt;
-  font-family: verdana;
-  font-weight: bold;
-  text-align: left;
-  margin-bottom: 0px;
-  background-image: url('images/logo.jpg');
-  width: 777px;
-  height: 443px;
-  opacity: .6; */
 }
 
 #blog-description{
@@ -43,8 +33,9 @@ h1#blog-title{
 }
 
 #access{
-  display: none; /* Skip to content and about link */
+  display: none; 
 }
+*/
 
 .navigation{
   font-size: 9pt;
@@ -61,7 +52,6 @@ h1#blog-title{
 }
 
 .post{
-  width: 660px;
   margin-bottom: 30px;
  /* background-color: rgba(0,0,0,0.65);
   opacity: .9;*/
@@ -70,12 +60,9 @@ h1#blog-title{
 .post .entry-title{
   font-family: georgia;
   font-weight: bold;
-  font-size: 17pt;
-  margin-bottom: 20px;
-/*  background-color: rgba(30,30,30,0.8); */
+  font-size: 14pt;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-left: 5px;
 }
 
 .post .entry-date{
@@ -91,37 +78,56 @@ h1#blog-title{
 
 .post .entry-content{
   margin-top: 10px;
-  font-family: courier;
-  text-align: justify;
-  width: 500px;
+  font-family: verdana, helvetica, sans-serif;
+  text-align: left;
+  font-size: 10pt;
 }
 
 .post .entry-content p{
-  margin-bottom; 
+  margin-bottom: 1em;
 }
 
 
 .widget.lfe_widget{
   overflow: hidden;
+  margin-top: 20px;
 }
 
-.lfe_widget h3{
-  padding-left: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-bottom: 5px;
+#side_nav h3{
+  font-family: verdana, helvetica, sans-serif;
+  font-size: 9pt;
+  margin-bottom: 3px;
 }
 
 .lfe_widget li.vevent{
   padding-left: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 9pt;
+  clear: both;
+}
+
+.lfe_widget li.vevent br{
+  display: block;
+  height: 0px;
+}
+
+.lfe_widget li.vevent .dtstart{
+  float: right;
+  font-family: courier;
+  font-size: 8pt;
+  margin-right: 5px;
 }
 
 .lfe_widget .lastfm-profile{
+  clear: both;
   float: right;
-  font-size: 9pt;
+  font-size: 8pt;
   margin-right: 5px;
+  display: none;
+}
+
+.lfe_widget .lfe_hide{
+  display: none;
 }
 
 .sidebar#secondary{
