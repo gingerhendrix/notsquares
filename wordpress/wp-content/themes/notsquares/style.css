@@ -29,7 +29,7 @@ html{
 
 body {
   background-color: #000000;
-  background-image: url('images/background.jpg');
+ /* background-image: url('images/background.jpg');*/
   background-attachment: fixed;
   color: white;
   text-align: center;
@@ -99,7 +99,7 @@ h1#blog-title{
 #container {
   text-align: left;
   float: left;
-  width: 690px;
+  width: 500px;
   min-height: 800px;
   margin-top: 477px;
 }
@@ -121,21 +121,23 @@ h1#blog-title{
 .post{
   width: 660px;
   margin-bottom: 30px;
-  background-color: rgba(0,0,0,0.65);
-  opacity: .9;
+ /* background-color: rgba(0,0,0,0.65);
+  opacity: .9;*/
 }
 
 .post .entry-title{
-  font-family: verdana, helvetica, arial;
-  font-size: 11pt;
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 17pt;
   margin-bottom: 20px;
-  background-color: rgba(30,30,30,0.8);
+/*  background-color: rgba(30,30,30,0.8); */
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
 }
 
 .post .entry-date{
+  font-family: courier;
   font-size: 8pt;
   margin-bottom: 20px;
 }
@@ -147,11 +149,17 @@ h1#blog-title{
 
 .post .entry-content{
   margin-top: 10px;
+  font-family: courier;
+  text-align: justify;
+  width: 500px;
+}
+
+.post .entry-content p{
+  margin-bottom; 
 }
 
 
 .widget.lfe_widget{
-  border: 1px solid white;
   overflow: hidden;
 }
 
@@ -159,8 +167,6 @@ h1#blog-title{
   padding-left: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background-color: #fff;
-  color: #000;
   margin-bottom: 5px;
 }
 
