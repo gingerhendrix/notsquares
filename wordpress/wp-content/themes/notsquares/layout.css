@@ -1,0 +1,144 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header{
+	height: 127px;
+	background-image: url('images/headerbar_repeat.png');
+	background-repeat: repeat-x;
+	overflow: visible;
+}
+
+#sun{
+	position: absolute;
+	z-index: 1;
+	left: 880px;
+	top: 84px;
+	background-image: url('images/sun.jpg');
+	width: 261;
+	height: 261;
+}
+
+#logo_top{
+	width: 160px;
+	height: 160px;
+	z-index: 2;
+	position: absolute;
+	left: 36px;
+	top: 32px;
+}
+
+#logotype_top{
+	margin-left: 236px;
+	margin-top: 105px;
+}
+
+#top_edge{
+	background-image: url('images/top_edge_pattern.png');
+	background-repeat: repeat-x;
+	height: 18px;
+	width: 100%;
+	display: block;
+	position: relative;
+	z-index: 1;	
+}
+
+#bd{
+	background-image: url('images/back_square.png');
+	background-repeat: repeat;
+	background-color: #f1ff0d;
+	background-position: -30px -30px;
+	width: 100%;
+	padding-top: 34px;
+	padding-left: 236px;
+	overflow: hidden;
+	position: relative;
+}
+
+#content{
+	width: 517px;
+	height: auto;
+	min-height: 3000px;
+	background-image: url('images/bigbody.png');
+	float: left;
+	overflow: hidden;
+	z-index: 3;
+}
+#drop_shadow{
+	width: 24px;
+	background-color: #212121;
+	opacity: 0.60;
+	top: 235px;
+	bottom: 0px;
+	position: absolute;
+	left: 212px;
+}
+
+
+#side_nav{
+	width: 141px;
+	margin-left: 37px;
+	float: left;
+	height: 500px;
+	background-color: #ffffff;
+	position: relative;
+	z-index: 3;
+}
+
+#side_nav_footer{
+	background-image: url('images/menu_bottom_edge.png');
+	position: absolute;
+	bottom: -10px;
+	height: 10px;
+	width: 100%;
+}
+
+#top_footer{
+	clear: both;
+	margin-left: -236px;
+}
+
+#footer_wing{
+	float: left;
+	width: 236px;
+	height: 479px;
+	background-image: url('images/footer_wing.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+#content_footer{
+	float: left;
+	width: 517px;
+	height: 479px;
+	background-image: url('images/footer.png');
+}
+
+#bottom_footer{
+	width: 100%;
+	height: 223px;
+	background-image: url('images/footerbar_repeat.png');
+	background-repeat: repeat-x;
+}
+
+#logo_bottom{
+	width: 160px;
+	height: 160px;
+	z-index: 2;
+	position: absolute;
+	left: 36px;
+	bottom: 16px;
+}
+
+#logotype_bottom{
+	margin-left: 36px;
+	margin-top: 18px;
+}
+
+#warrior{
+	position: absolute;
+	left: 296px;
+	bottom: 182px;
+}
+

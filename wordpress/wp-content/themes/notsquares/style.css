@@ -9,6 +9,7 @@ TAGS: woop
 TEMPLATE: sandbox-notsquares
 */
 @import url('http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css');
+@import url('layout.css');
 
 a{
   color: white;
@@ -21,30 +22,6 @@ a:hover{
 
 a:visited{
   color: white;
-}
-
-html{
- background-color: #000000;
-}
-
-body {
-  background-color: #000000;
- /* background-image: url('images/background.jpg');*/
-  background-attachment: fixed;
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-#wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url('images/logo.jpg');
-  background-repeat: no-repeat;
-  background-position: 300px 0px;
-  background-attachment: fixed;
-  width: 960px;
-  position: relative;
 }
 
 h1#blog-title{
@@ -65,43 +42,8 @@ h1#blog-title{
   display : none;
 }
 
-
-.heder-image{
-  display: none;
-}
-
-#footer{
-  visibility: hidden;
-  clear: both;
-}
-
 #access{
   display: none; /* Skip to content and about link */
-}
-
-.sidebar {
- display: block;
- width: 200px;
- padding-left: 10px;
- text-align: left;
- position: fixed;
- left: 1080px;
-}
-
-#primary.sidebar{
-  top: 200px;
-}
-
-#secondary.sidebar{
- top: 400px;
-}
-
-#container {
-  text-align: left;
-  float: left;
-  width: 500px;
-  min-height: 800px;
-  margin-top: 477px;
 }
 
 .navigation{

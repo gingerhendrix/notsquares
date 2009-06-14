@@ -14,15 +14,28 @@
 
 <div id="wrapper" class="hfeed">
 
+  <div id="sun" ></div>
+		
+	<div id="header">
+		<img id="logo_top" src="wp-content/themes/notsquares/images/xxxx_logo.png" width="160" height="160"></img>
+		<img id="logotype_top" src="wp-content/themes/notsquares/images/notsquares_words.png" width="171" height="22"></img>
+	</div>
+
+	<!--
 	<div id="header">
 		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
 		<a  href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home">
 		  <img class="heder-image" src="wp-content/themes/notsquares/images/logo.jpg"></img>
 		</a>
 		<div id="blog-description"><?php bloginfo('description') ?></div>
-	</div><!--  #header -->
+	</div> --> <!--  #header -->
 
+  <!--
 	<div id="access">
 		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
 		<?php sandbox_globalnav() ?>
-	</div><!-- #access -->
+	</div> --> <!-- #access -->
+	
+	<div id="bd">
+		<div id="top_edge"></div>
+		<div id="drop_shadow"></div>	
