@@ -1,3 +1,5 @@
+  <div id="side_nav">
+	
 	<div id="primary" class="sidebar">
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : // begin primary sidebar widgets ?>
@@ -64,3 +66,7 @@
 <?php endif; // end secondary sidebar widgets  ?>
 		</ul>
 	</div><!-- #secondary .sidebar -->
+	
+	<div id="side_nav_footer"></div>
+</div>
+
