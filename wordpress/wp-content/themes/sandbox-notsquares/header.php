@@ -11,6 +11,11 @@
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 	<script src="wp-content/themes/sandbox-notsquares/js/notsquares.js"></script>
+	<link rel="stylesheet" href="wp-content/themes/sandbox-notsquares/css/sifr.css" type="text/css">
+
+  <script src="wp-content/themes/sandbox-notsquares/js/sifr.js" type="text/javascript"></script>
+  <script src="wp-content/themes/sandbox-notsquares/js/sifr-config.js" type="text/javascript"></script>
+
 </head>
 
 <body class="<?php sandbox_body_class() ?>">

@@ -141,8 +141,17 @@ body{
 }
 
 #warrior{
+  display: none;
 	position: absolute;
 	left: 296px;
 	bottom: 182px;
 }
+
+.sIFR-active h2.entry-title {
+  visibility: hidden;
+  font-family: Verdana;
+  line-height: 1em;
+  font-size: 36px;
+}
+
 
