@@ -1,0 +1,149 @@
+/*
+THEME NAME: Not Squares
+THEME URI: http://gandrew.com
+DESCRIPTION: Woop
+VERSION: 0.1
+AUTHOR: Gareth Andrew
+AUTHOR Uri: http://gandrew.com
+TAGS: woop
+TEMPLATE: sandbox-notsquares
+*/
+@import url('http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css');
+@import url('layout.css');
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+ text-decoration: underline;
+}
+
+a:visited{
+  color: black;
+}
+/*
+h1#blog-title{
+  display : none;
+}
+
+#blog-description{
+  display : none;
+}
+
+#access{
+  display: none; 
+}
+*/
+
+.navigation{
+  font-size: 9pt;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.nav-previous{
+ float: left;
+}
+
+.nav-next{
+ float: right;
+}
+
+.post{
+  margin-bottom: 30px;
+ /* background-color: rgba(0,0,0,0.65);
+  opacity: .9;*/
+}
+
+.post .entry-title{
+  font-family: georgia;
+  font-weight: bold;
+  font-size: 14pt;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.post .entry-date{
+  font-family: courier;
+  font-size: 8pt;
+  margin-bottom: 20px;
+}
+
+.post .entry-meta{
+  margin-top: 10px;
+  font-size: 8pt;
+}
+
+.post .entry-content{
+  margin-top: 10px;
+  font-family: verdana, helvetica, sans-serif;
+  text-align: left;
+  font-size: 10pt;
+}
+
+.post .entry-content p{
+  margin-bottom: 1em;
+}
+
+
+.widget.lfe_widget{
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#side_nav h3{
+  font-family: verdana, helvetica, sans-serif;
+  font-size: 9pt;
+  margin-bottom: 3px;
+}
+
+.lfe_widget li.vevent{
+  padding-left: 5px;
+  margin-bottom: 2px;
+  font-size: 9pt;
+  clear: both;
+}
+
+.lfe_widget li.vevent br{
+  display: block;
+  height: 0px;
+}
+
+.lfe_widget li.vevent .dtstart{
+  float: right;
+  font-family: courier;
+  font-size: 8pt;
+  margin-right: 5px;
+}
+
+.lfe_widget .lastfm-profile{
+  clear: both;
+  float: right;
+  font-size: 8pt;
+  margin-right: 5px;
+  display: none;
+}
+
+.lfe_widget .lfe_hide{
+  display: none;
+}
+
+.sidebar#secondary{
+  font-size: 9pt;
+}
+
+.sidebar#secondary{
+  font-size: 9pt;
+}
+
+.sidebar#secondary ul.xoxo > li{
+  margin-top: 10px;
+}
+
+.sidebar#secondary ul.xoxo > li li{
+  padding-left: 5px;
+}
+
+
