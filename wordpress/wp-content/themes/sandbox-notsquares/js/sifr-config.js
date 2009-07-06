@@ -57,3 +57,8 @@ sIFR.replace(blackForest, {
         'h2.entry-title a:hover { color: #000000; text-decoration: underline }'        
         ]
 });
+
+sIFR.replace(blackForest, {
+  selector: '#side_nav h3',
+  css: []
+});

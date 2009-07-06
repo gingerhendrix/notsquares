@@ -25,8 +25,10 @@
   <div id="sun" ></div>
 		
 	<div id="header">
-		<img id="logo_top" src="wp-content/themes/notsquares/images/xxxx_logo.png" width="160" height="160"></img>
-		<img id="logotype_top" src="wp-content/themes/notsquares/images/notsquares_words.png" width="171" height="22"></img>
+    <a  href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home">	  
+		  <img id="logo_top" src="wp-content/themes/notsquares/images/xxxx_logo.png" width="160" height="160"></img>
+  		<img id="logotype_top" src="wp-content/themes/notsquares/images/notsquares_words.png" width="171" height="22"></img>
+  	</a>
 	</div>
 
 	<!--

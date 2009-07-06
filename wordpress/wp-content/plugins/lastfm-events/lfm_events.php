@@ -162,7 +162,7 @@ function lfe_parse_event($vcal_event)
 		}
 		// The start datetime in ISO 8601, which we'll convert to UNIX time for convenience
 		// SWFIXME: We'll ignore timezones, because it's just too hard in PHP without screeds of adding data on all the timezones *in the world* to this script
-		if ( stripos($line, 'DTSTART;') !== false ) {
+		if ( stripos($line, 'DTSTART') !== false ) {
 			// e.g. DTSTART;TZID=UTC;VALUE=DATE:20080131
 			// e.g. DTSTART;TZID=Europe/London:20070930T190000
 			$bits = explode(':', $line);
@@ -172,7 +172,7 @@ function lfe_parse_event($vcal_event)
 		}
 		// The start datetime in ISO 8601, which we'll convert to UNIX time for convenience
 		// SWFIXME: We'll ignore timezones initially, because it's just too hard in PHP without adding screeds of data defining all the timezones *in the world* to this script
-		if ( stripos($line, 'DTSTART;') !== false ) {
+		if ( stripos($line, 'DTSTART') !== false ) {
 			// e.g. DTSTART;TZID=UTC;VALUE=DATE:20080131
 			// e.g. DTSTART;TZID=Europe/London:20070930T190000
 			$bits = explode(':', $line);
@@ -251,14 +251,14 @@ function lfe_write_events( & $events, $username = '', $num = 5, $list = true, $l
 			foreach ( $events as $event ) {			
 
 				// SWTODO: Maybe allow user to choose to display the date or time remaining until
-				$time_as = 'difference';
+				$time_as = 'date';//'difference';
 
 				$zero_length = ( $event['start_timestamp'] == $event['end_timestamp'] );
 
 				if ( $time_as == 'date' ) {	
 					// strftime should be locale sensitive.
-					$nice_start_date = strftime('%d %b \'%y %R', $event['start_timestamp']);
-					$nice_end_date = strftime('%d %b \'%y %R', $event['end_timestamp']);
+					$nice_start_date = strftime('%d %b', $event['start_timestamp']);
+					$nice_end_date = strftime('%d %b', $event['end_timestamp']);
 				} else {
 					$nice_start_date = lfe_time_difference($event['start_timestamp']);
 					$nice_end_date = lfe_time_difference($event['end_timestamp']);
@@ -297,7 +297,7 @@ function lfe_write_events( & $events, $username = '', $num = 5, $list = true, $l
 				echo "<br /><abbr class='dtstart' title='$iso_start_date'>";
 				// Don't show the optional (in hcal terms) end date if it's the same as the start
 				echo "$nice_start_date</abbr>";
-				if ( ! $zero_length && $time_as != 'difference' ) {
+			/*	if ( ! $zero_length && $time_as != 'difference' ) {
 					echo " - <abbr class='dtend' title='$iso_end_date'>$nice_end_date</abbr>";
 				}
 				elseif ( ! $zero_length && $time_as == 'difference' ) {
@@ -305,7 +305,7 @@ function lfe_write_events( & $events, $username = '', $num = 5, $list = true, $l
 				}
 				else {
 					echo "<span class='lfe_hide'>.</span>";
-				}
+				}*/
 				if ($list) {
 					echo "</li>";
 				} elseif ($num != 1) {

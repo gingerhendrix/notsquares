@@ -94,8 +94,8 @@ h1#blog-title{
 }
 
 #side_nav h3{
-  font-family: verdana, helvetica, sans-serif;
-  font-size: 9pt;
+  font-family: georgia, times, serif;
+  font-size: 14pt;
   margin-bottom: 3px;
 }
 
@@ -104,6 +104,8 @@ h1#blog-title{
   margin-bottom: 2px;
   font-size: 9pt;
   clear: both;
+  font-family: arial, sans-serif;
+  font-size: 9pt;
 }
 
 .lfe_widget li.vevent br{

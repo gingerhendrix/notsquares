@@ -83,8 +83,8 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	margin-left: 37px;
+	padding-bottom: 20px;
 	float: left;
-	height: 500px;
 	background-color: #ffffff;
 	position: relative;
 	z-index: 3;
@@ -94,6 +94,7 @@ body{
 	background-image: url('images/menu_bottom_edge.png');
 	position: absolute;
 	bottom: -10px;
+	margin-left: -5px;
 	height: 10px;
 	width: 100%;
 }
